@@ -13,10 +13,8 @@ export default function Index() {
     <View>
       <Text>To-Do List</Text>
 
-      {/* Pass addTask to ToDoForm */}
       <ToDoForm addTask={addTask} />
 
-      {/* Display task list */}
       <FlatList
         data={tasks}
         keyExtractor={(_, index) => index.toString()}
